@@ -1,4 +1,14 @@
+import Searchbar from "./Searchbar";
+
 export const App = () => {
+https://pixabay.com/api/?q=cat&page=1&key=your_key&image_type=photo&orientation=horizontal&per_page=12
+
+  const APY_KEY = 34821518 - f662f92316867637fb490ee01;
+
+  findItems = () => {
+    
+  }
+
   return (
     <div
       style={{
@@ -10,7 +20,8 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+   
+      <Searchbar onSubmit={this.findItems}/>
     </div>
   );
 };

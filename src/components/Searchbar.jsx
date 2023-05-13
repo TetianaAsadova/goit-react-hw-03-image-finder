@@ -1,26 +1,29 @@
+import React from "react";
+import PropTypes from 'prop-types';
 
-
-const PER_PAGE = 1;
-
-const Searchbar = ({ onSubmit }) => {
-    
-    return (
-        <header class="searchbar">
-            <form class="form">
-                <button type="submit" class="button">
-                    <span class="button-label">Search</span>
+const Searchbar = ({ onInput, onSubmit }) => (   
+        <header className="searchbar">
+            <form className="searchform" onSubmit={onSubmit}>
+                <button type="submit" className="searchform_button">
+                    <span className="searchform_button_label">Search</span>
                 </button>
 
                 <input
-                    class="input"
+                    className="searchform_input"
                     type="text"
-                    autocomplete="off"
-                    autofocus
+                    autoComplete="off"
+                    autoFocus
                     placeholder="Search images and photos"
+                    onChange={onInput}
                 />
             </form>
         </header>
-    )
+          
+)
+
+Searchbar.propTypes = {
+    onInput: PropTypes.func,
+    onSubmit: PropTypes.func,
 }
 
 export default Searchbar;

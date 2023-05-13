@@ -26,7 +26,7 @@ class App extends Component {
       value: event.target.value,
       page: 1
     });
-    console.log(`state1`, this.state);
+    // console.log(`state1`, this.state);
   };
 
   handleSubmit = event => {
@@ -38,9 +38,9 @@ class App extends Component {
       )
         .then(response => response.json())
         .then(data => {
-          console.log(`data`, data);
+          // console.log(`data`, data);
           this.setState({ images: data.hits, loading: false });
-          console.log(`state2`, this.state);
+          // console.log(`state2`, this.state);
         })
         .catch(error => {
           console.log(error.message);

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Searchbar from './Searchbar';
+import Searchbar from './Searchbar/Searchbar';
 import Loader from './Loader';
-import ImageGallery from './ImageGallery';
-import Button from './Button';
-import Modal from './Modal';
+import ImageGallery from './ImageGallery/ImageGallery';
+import Button from './Button/Button';
+import Modal from './Modal/Modal';
 
 
 const APY_KEY = '34821518-f662f92316867637fb490ee01';

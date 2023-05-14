@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import css from './Modal.module.css';
 
 const Modal = ({ src, alt, showModal, onClose }) => {
   return (
     showModal && (
-      <div className="overlay" onClick={onClose}>
-        <div className="modal">
+      <div className={css.overlay} onClick={onClose}>
+        <div className={css.modal}>
           <img src={src} alt={alt} />
         </div>
       </div>
